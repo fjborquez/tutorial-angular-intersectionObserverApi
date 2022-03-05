@@ -1,0 +1,13 @@
+<div class='flex-grow flex-end content-center self-center text-6xl font-sans' [ngSwitch]="status">
+    <ng-container *ngSwitchCase="intersectionStatus.Visible">
+        ✅
+    </ng-container>
+
+    <ng-container *ngSwitchCase="intersectionStatus.Pending">
+        <loading-bubbles></loading-bubbles>
+    </ng-container>
+
+    <ng-container *ngSwitchDefault>
+        ❌
+    </ng-container>
+</div>

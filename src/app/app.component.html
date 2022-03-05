@@ -6,22 +6,7 @@
                     <div class='flex-grow content-center text-6xl font-sans'>
                         {{ item }}
                     </div>
-                    <div class='flex-grow flex-end content-center self-center text-6xl font-sans' [ngSwitch]="visibilityStatus[item]">
-                        <ng-container *ngSwitchCase="intersectionStatus.Visible">
-                            ✅
-                        </ng-container>
-
-                        <ng-container *ngSwitchCase="intersectionStatus.Pending">
-                            <ng-container [ngTemplateOutlet]="loading"></ng-container>
-                            <ng-template #loading>
-                                <loading-bubbles></loading-bubbles>
-                            </ng-template>
-                        </ng-container>
-
-                        <ng-container *ngSwitchDefault>
-                            ❌
-                        </ng-container>
-                    </div>
+                    <visibility-indicator [status]="visibilityStatus[item]"></visibility-indicator>
                 </div>
             </div>
         </div>

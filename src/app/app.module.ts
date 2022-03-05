@@ -5,10 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { IntersectionObserverDirective } from './directives/intersection-observer/intersection-observer.directive';
 import { LoadingBubblesComponent } from './directives/loading-bubbles/loading-bubbles.component';
+import { VisibilityIndicatorComponent } from './directives/visibility-indicator/visibility-indicator.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, IntersectionObserverDirective, LoadingBubblesComponent ],
+  declarations: [ AppComponent, IntersectionObserverDirective, LoadingBubblesComponent, VisibilityIndicatorComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

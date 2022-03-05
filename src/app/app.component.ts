@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy,ɵmarkDirty as markDirty  } from '@angular/core';
 
-import { IntersectionStatus } from './from-intersection-observer';
+import { IntersectionStatus } from './directives/intersection-observer/from-intersection-observer';
 
 @Component({
   selector: 'my-app',

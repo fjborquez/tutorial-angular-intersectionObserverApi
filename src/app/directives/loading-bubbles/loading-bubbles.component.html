@@ -1,6 +1,6 @@
 <!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
 <svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg" fill="#2196F3">
-    <circle *ngFor="let circle of circles" [attr.cx]="circle.cx" [attr.cy]="circle.cy" [attr.r]="circle.r">
+    <circle *ngFor="let circle of circles" [attr.cx]="circle.cx" [attr.cy]="circle.cy" [attr.r]="circle.r" [attr.fill-opacity]="circle.fill-opacity">
         <animate *ngFor="let animate of circle.animates"  [attr.attributeName]="animate.attributeName" [attr.from]="animate.from" [attr.to]="animate.to" 
         [attr.begin]="animate.begin" [attr.dur]="animate.dur" [attr.values]="animate.values" [attr.calcMode]="animate.calcMode" [attr.repeatCount]="animate.repeatCount" />
     </circle>

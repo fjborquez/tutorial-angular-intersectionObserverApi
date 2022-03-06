@@ -28,7 +28,6 @@ export class IntersectionObserverDirective implements OnInit, OnDestroy {
       threshold: this.intersectionThreshold
     };
 
-    // La directiva se subscribe al observable
     fromIntersectionObserver(
       element,
       config,
@@ -36,7 +35,6 @@ export class IntersectionObserverDirective implements OnInit, OnDestroy {
     ).pipe(
       takeUntil(this.destroy$)
     ).subscribe((status) => {
-       // Emite el estado actual del elemento que tiene la directiva
       this.visibilityChange.emit(status);
     });
   }

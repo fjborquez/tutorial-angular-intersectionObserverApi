@@ -6,7 +6,7 @@
                     <div class='flex-grow content-center text-6xl font-sans'>
                         {{ item }}
                     </div>
-                    <visibility-indicator [status]="visibilityStatus[item]"></visibility-indicator>
+                    <visibility-indicator [status]="visibilityStatus[item]" [attr.class]="visibilityIndicatorClass"></visibility-indicator>
                 </div>
             </div>
         </div>

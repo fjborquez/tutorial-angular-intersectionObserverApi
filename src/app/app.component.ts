@@ -12,6 +12,14 @@ export class AppComponent  {
   list = [];
   visibilityStatus: {[key: number]: IntersectionStatus} = {};
   intersectionStatus = IntersectionStatus;
+  visibilityIndicatorClass: any = {
+    'flex-grow': true,
+    'flex-end': true,
+    'content-center': true,
+    'self-center': true,
+    'text-6xl': true, 
+    'font-sans': true,
+  };
   
   ngOnInit() {
     for (let n = 0; n < 1000; n++) {

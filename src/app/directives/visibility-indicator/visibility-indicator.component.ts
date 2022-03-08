@@ -14,6 +14,16 @@ export class VisibilityIndicatorComponent implements OnInit {
   @Input()
   status: string;
 
+  @Input()
+  class: any;
+
+  loadingBubblesConfig: any = {
+    width: 120,
+    height: 30,
+    viewBox: '0 0 120 30',
+    fill: '#2196F3',
+  };
+
   ngOnInit(): void {
   }
 

@@ -1,0 +1,5 @@
+<svg:circle [attr.cx]="cx" [attr.cy]="cy" [attr.r]="r" [attr.fill-opacity]="fillOpacity">
+    <svg:animate *ngFor="let animate of animates"  [attr.attributeName]="animate.attributeName" [attr.from]="animate.from" [attr.to]="animate.to" 
+    [attr.begin]="animate.begin" [attr.dur]="animate.dur" [attr.values]="animate.values" [attr.calcMode]="animate.calcMode" [attr.repeatCount]="animate.repeatCount">
+    </svg:animate>
+</svg:circle>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'loading-bubbles',
@@ -91,6 +91,18 @@ export class LoadingBubblesComponent implements OnInit {
       ]
     },
   ];
+
+  @Input()
+  width: any;
+
+  @Input()
+  height: any;
+
+  @Input()
+  viewBox: any;
+
+  @Input()
+  fill: string;
 
   constructor() { }
 
